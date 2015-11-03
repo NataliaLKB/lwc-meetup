@@ -11,12 +11,11 @@ html, body {
 }
 
 main {
-	margin: 0rem 10%;
+	margin: 0 10% 5rem;
 }
 
 a {
 	color: #111;
-	font-weight: bold;
 }
 
 a:visited {
@@ -51,6 +50,7 @@ header {
 	float: left;
 	padding: 2%;
 	font-weight: lighter;
+    margin-bottom: 5rem;
 }
 
 @media (max-width: 600px) {
