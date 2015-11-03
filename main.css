@@ -15,11 +15,8 @@ main {
 }
 
 a {
-	color: #111;
-}
-
-a:visited {
-	color: #888;
+	color: #005689;
+    text-decoration: none;
 }
 
 h2 {
