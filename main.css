@@ -23,6 +23,10 @@ a:visited {
 	color: #888;
 }
 
+h1 {
+	margin: 1.5em 2% 0em;
+}
+
 header {
 	border-bottom: 1px solid #00456e;
 	min-height: 5em;
@@ -34,20 +38,35 @@ header {
     position: relative;
     float: right;
     margin: 0.75rem 10% 0.25rem 0;
+    max-width: 80%;
 }
+
 
 /*
 *  EVENT
 */
 
-.event-wrapper {
+.event {
 	width: 46%;
 	float: left;
 	padding: 2%;
 	font-weight: lighter;
 }
 
+@media (max-width: 600px) {
+	.event {
+		width: 96%;
+	}
+}
 
+.event__title {
+	color: #005689;
+}
+
+.event__details {
+    margin: 0;
+    line-height: 1.5;
+}
 
 /*
 *  FOOTER
@@ -63,28 +82,35 @@ footer {
     min-height: 3em;
 }
 
+.footer__follow-us {
+	margin: 0 10%;
+}
+
+@media (max-width: 600px) {
+	.footer__follow-us {
+		margin: 0 2%;
+	}
+}
+
 .footer__follow-us .button {
     border-color: #767676;
-    height: 1.5rem;
     padding: 0 0.5rem;
     margin: 0.8rem 1rem;
     font-size: 0.75rem;
     line-height: 1.375rem;
     font-weight: 400;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     display: inline-block;
     vertical-align: top;
-    width: auto;
-    text-decoration: none;
     -webkit-border-radius: 62.5rem;
     border-radius: 62.5rem;
     border-width: 0.0625rem;
     border-style: solid;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+	.footer__follow-us .button {
+    	margin: 0.8rem 0.5rem;
+	}
 }
 
 .footer__follow-us a {
