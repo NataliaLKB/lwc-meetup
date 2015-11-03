@@ -23,6 +23,10 @@ a:visited {
 	color: #888;
 }
 
+h1 {
+	margin: 1.5em 2% 0em;
+}
+
 header {
 	border-bottom: 1px solid #00456e;
 	min-height: 5em;
@@ -36,18 +40,26 @@ header {
     margin: 0.75rem 10% 0.25rem 0;
 }
 
+
 /*
 *  EVENT
 */
 
-.event-wrapper {
+.event {
 	width: 46%;
 	float: left;
 	padding: 2%;
 	font-weight: lighter;
 }
 
+.event__title {
+	color: #005689;
+}
 
+.event__details {
+    margin: 0;
+    line-height: 1.5;
+}
 
 /*
 *  FOOTER
@@ -61,6 +73,10 @@ footer {
     bottom: 0;
     width: 100%;
     min-height: 3em;
+}
+
+.footer__follow-us {
+	margin: 0 10%;
 }
 
 .footer__follow-us .button {
